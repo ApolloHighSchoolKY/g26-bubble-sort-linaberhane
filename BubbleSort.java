@@ -6,6 +6,14 @@ public class BubbleSort
 	public static void main(String[] args)
  	{
     	int[] myNums = {12, 15, 0, 44, 13, 1, 2};
+		int[] sorted;
+
+		System.out.println(Arrays.toString(myNums));
+		sorted = sorter(myNums);
+		System.out.println(Arrays.toString(sorted));
+
+  	}
+	public static int[] sorter(int[] myNums) {
 		int passes = myNums.length-1;
 		int comparisons = myNums.length-1;
 		int tempNum;
@@ -30,8 +38,6 @@ public class BubbleSort
 			System.out.println(Arrays.toString(myNums));
 		}
 		//End Loop for passes
-
-		//IF they need to be switched, then save the second number in tempNum, THEN switch
-
-  	}
+		return myNums;
+	}
 }
